@@ -24,7 +24,7 @@ class NotificationsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         notificationsViewModel =
             ViewModelProvider(this).get(NotificationsViewModel::class.java)
 
@@ -32,7 +32,7 @@ class NotificationsFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        notificationsViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root
@@ -41,5 +41,6 @@ class NotificationsFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        //komentari
     }
 }
