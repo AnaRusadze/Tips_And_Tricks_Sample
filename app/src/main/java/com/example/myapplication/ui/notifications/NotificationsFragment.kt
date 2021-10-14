@@ -34,6 +34,7 @@ class NotificationsFragment : Fragment() {
         val textView: TextView = binding.textNotifications
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
+            //TODO: new one
         })
         return root
     }
