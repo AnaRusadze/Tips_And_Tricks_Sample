@@ -39,6 +39,7 @@ class NotificationsFragment : Fragment() {
     }
 
     override fun onDestroyView() {
+        //comment on main
         super.onDestroyView()
         _binding = null
     }
