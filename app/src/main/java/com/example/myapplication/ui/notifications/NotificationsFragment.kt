@@ -36,6 +36,7 @@ class NotificationsFragment : Fragment() {
             textView.text = it
         })
         return root
+        // test commit for notification
     }
 
     override fun onDestroyView() {

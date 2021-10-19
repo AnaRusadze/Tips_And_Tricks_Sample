@@ -33,5 +33,6 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         // This is the test comment
+        // test commit
     }
 }
