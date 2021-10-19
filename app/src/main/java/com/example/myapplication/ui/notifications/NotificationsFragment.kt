@@ -37,9 +37,11 @@ class NotificationsFragment : Fragment() {
             //TODO: new one
         })
         return root
+        // test commit for notification
     }
 
     override fun onDestroyView() {
+        //comment on main
         super.onDestroyView()
         _binding = null
     }
